@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(210, 194, 222); 
+    border: none;
+    align-items: center;
+}
+header p{
+    font-weight: 700;
+    font-size: 20px;
+}
+/* end header */
+
+/* start section1 */
+.section1{
+    background-color: rgb(210, 194, 222);
+    width: 100%;
+    padding-top: 20px;
+}
+
+/* ------------------------------ */
+.logo{
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+}
+.logo::before{
+    content:"";
+    width: 45%;
+    height: 2.5px;
+    background-color: rgb(38, 36, 36);
+    position: absolute;
+    top:50%;
+    left:0px;
+}
+.logo::after{
+    content:"";
+    width: 45%;
+    height: 2.5px;
+    background-color: rgb(38, 36, 36);
+    position: absolute;
+    top:50%;
+    right:0px;
+}
+/* ------------------------------ */
+
+.section1 .public .public,
+.section1 .local .local{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    
+}
+.section1 .public .public .post1,
+.section1 .local .local .post{
+    width: 20%;
+    height: 400px;
+    background-color: rgb(241, 235, 235);
+    margin: 20px;
+}
+.section1 .public .public .post1 .username,
+.section1 .local .local .post .username {
+    display: flex;
+    padding: 10px 3px;
+}
+.section1 .public .public .post1 .username img,
+.section1 .local .local .post .username img {
+    clip-path: circle();
+}
+.section1 .public .public .post1 .positionicon,
+.section1 .local .local .post .positionicon {
+    position: relative;
+    transition: all 0.3s;
+}
+.section1 .public .public .post1 .positionicon .iconsheart,
+.section1 .local .local .post .positionicon .iconsheart {
+    position: absolute;
+    bottom: 3%;
+    right: 8px;
+
+}
+.section1 .public .public .post1 .positionicon .iconsheart1,
+.section1 .local .local .post .positionicon .iconsheart1{
+    position: absolute;
+    bottom: 3%;
+    right: 8px;
+    display: none;
+}
+.section1 .public .public .post1 .photodetelis,
+.section1 .local .local .post .photodetelis{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+.section1 .public .public .post1 .detel,
+.section1 .local .local .post .detel{
+    padding-left: 10px;
+    margin-top: -17px;
+}
+
+.section1 .public .public .post1 .positionicon .animation:hover,
+.section1 .local .local .post .positionicon .animation :hover{
+    transform: scale(1.1,1.1);
+    border-radius: 10px;
+    opacity: 0.8;
+}
+/* local */
+.section1 .local .local .post .username .icons{
+    position: relative;
+    right: -70px;
+}
+/* end local */
+
+/* end .section1 */
+
+/* section 2 */
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+.head button {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(181, 173, 173);
+    border: none;
+    align-items: center;
+}
+
+.head p {
+    font-weight: 700;
+    font-size: 20px;
+}
+.section2 {
+    width: 100%;
+    height:800px;
+    background-color:rgb(210, 194, 222);
+    padding: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+.section2 .container form{
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+}
+.section2 .container form input,
+.section2 .container form textarea {
+    width: 300px;
+    padding: 4px ;
+    margin-bottom: 18px;
+}
+.section2 .container form label {
+    padding: 7px 0;
+    font-size:20px;
+}
+::placeholder {
+    color: #9f9ba5;
+}
+.section2 .container form textarea:focus {
+    border: solid 2px rgb(195, 194, 194);
+    outline: none;
+}
+.section2 .container form input:focus {
+    border: solid 2px rgb(195, 194, 194);
+    outline: none;
+}
+.section2 .container form .button {
+    border: none;
+    margin-top: 10px;
+    padding: 12px 15px;
+    background-color:rgb(181, 173, 173);
+    border-radius: 6px;
+    width: 100px;
+}
+.section2 .container form  .button{
+    transform: translate(400px,50px);
+}
+
+.active{
+    display:block;
+}
+/* end section 2 */
+
